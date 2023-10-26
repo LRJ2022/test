@@ -27,16 +27,16 @@
 
     <script>
         const funtText = document.getElementById('funtText');
-        const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'brown'];
+        const color = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'brown'];
 
         // Funktion til at ændre farven automatisk
         function changeColor() {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            const randomColor = color[Math.floor(Math.random() * color.length)];
             funtText.style.color = randomColor;
         }
 
         // Start farveskift automatisk med et interval på 2000 ms (2 sekunder)
-        const colorChangeInterval = setInterval(changeColor, 2000);
+        const colorChangeInterval = setInterval(changeColor, 200);
 
         // Du kan stoppe farveskiftet ved at fjerne intervallet (f.eks. ved at klikke et andet sted)
         funtText.addEventListener('click', () => {
