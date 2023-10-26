@@ -18,4 +18,32 @@
         });
     </script>
 </body>
+
+<head>
+    <title>Funny JavaScript</title>
+</head>
+<body>
+    <h1 id="funText">This is auto color change!</h1>
+
+    <script>
+        const funText = document.getElementById('funText');
+        const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'brown'];
+
+        // Funktion til at ændre farven automatisk
+        function changeColor() {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            funText.style.color = randomColor;
+        }
+
+        // Start farveskift automatisk med et interval på 2000 ms (2 sekunder)
+        const colorChangeInterval = setInterval(changeColor, 2000);
+
+        // Du kan stoppe farveskiftet ved at fjerne intervallet (f.eks. ved at klikke et andet sted)
+        funText.addEventListener('click', () => {
+            clearInterval(colorChangeInterval);
+        });
+    </script>
+</body>
+</html>
+
 </html>
