@@ -32,14 +32,14 @@
         // Funktion til at ændre farven automatisk
         function changeColor() {
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            funText.style.color = randomColor;
+            funtText.style.color = randomColor;
         }
 
         // Start farveskift automatisk med et interval på 2000 ms (2 sekunder)
         const colorChangeInterval = setInterval(changeColor, 2000);
 
         // Du kan stoppe farveskiftet ved at fjerne intervallet (f.eks. ved at klikke et andet sted)
-        funText.addEventListener('click', () => {
+        funtText.addEventListener('click', () => {
             clearInterval(colorChangeInterval);
         });
     </script>
