@@ -1,3 +1,21 @@
-her en min index<br>
-to linjer virker<br />
-tredje linje
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funny JavaScript</title>
+</head>
+<body>
+    <h1 id="funText">Click the button to change my color!</h1>
+    <button id="funButton">Click Me</button>
+
+    <script>
+        const funText = document.getElementById('funText');
+        const funButton = document.getElementById('funButton');
+        const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'brown'];
+
+        funButton.addEventListener('click', () => {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            funText.style.color = randomColor;
+        });
+    </script>
+</body>
+</html>
