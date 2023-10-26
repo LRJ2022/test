@@ -14,5 +14,5 @@ jobs:
         server: nt34.unoeuro.com
         username: lerejo.dk
         password: Ey5bnRmpA39rkchd2tfF
-        server-dir: git/
+        server-dir: git2/
         delete: true
